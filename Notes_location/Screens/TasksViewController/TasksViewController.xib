@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TasksViewController" customModule="Notes_location" customModuleProvider="target">
+            <connections>
+                <outlet property="addLocationLabel" destination="QYf-ns-NKj" id="R3Q-v3-uix"/>
+                <outlet property="addMessageLabel" destination="ekQ-4i-cfO" id="tHb-dq-2YX"/>
+                <outlet property="view" destination="LfR-JA-QPw" id="2TS-Qh-ITk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="LfR-JA-QPw">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYf-ns-NKj">
+                    <rect key="frame" x="20" y="94" width="96" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekQ-4i-cfO">
+                    <rect key="frame" x="20" y="135" width="104" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="pcI-n4-kcV"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="QYf-ns-NKj" firstAttribute="leading" secondItem="pcI-n4-kcV" secondAttribute="leading" constant="20" id="ISe-4E-e5y"/>
+                <constraint firstItem="QYf-ns-NKj" firstAttribute="bottom" secondItem="ekQ-4i-cfO" secondAttribute="top" constant="-20" id="Pg3-8h-ZCW"/>
+                <constraint firstItem="QYf-ns-NKj" firstAttribute="top" secondItem="pcI-n4-kcV" secondAttribute="top" constant="50" id="PgX-SV-9d2"/>
+                <constraint firstItem="ekQ-4i-cfO" firstAttribute="leading" secondItem="QYf-ns-NKj" secondAttribute="leading" id="lil-x4-bJY"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="94"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
